@@ -19,6 +19,7 @@ import { Route as AdminAboutRouteImport } from './routes/admin.about'
 import { Route as AdminActivitiesRouteImport } from './routes/admin.activities'
 import { Route as AdminContactRouteImport } from './routes/admin.contact'
 import { Route as AdminDashboardRouteImport } from './routes/admin.dashboard'
+import { Route as AdminEnquiriesRouteImport } from './routes/admin.enquiries'
 import { Route as AdminFacilitiesRouteImport } from './routes/admin.facilities'
 import { Route as AdminFeaturesRouteImport } from './routes/admin.features'
 import { Route as AdminGalleryRouteImport } from './routes/admin.gallery'
@@ -77,6 +78,11 @@ const AdminDashboardRoute = AdminDashboardRouteImport.update({
   path: '/admin/dashboard',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminEnquiriesRoute = AdminEnquiriesRouteImport.update({
+  id: '/admin/enquiries',
+  path: '/admin/enquiries',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminFacilitiesRoute = AdminFacilitiesRouteImport.update({
   id: '/admin/facilities',
   path: '/admin/facilities',
@@ -124,6 +130,7 @@ export interface FileRoutesByFullPath {
   '/admin/activities': typeof AdminActivitiesRoute
   '/admin/contact': typeof AdminContactRoute
   '/admin/dashboard': typeof AdminDashboardRoute
+  '/admin/enquiries': typeof AdminEnquiriesRoute
   '/admin/facilities': typeof AdminFacilitiesRoute
   '/admin/features': typeof AdminFeaturesRoute
   '/admin/gallery': typeof AdminGalleryRoute
@@ -143,6 +150,7 @@ export interface FileRoutesByTo {
   '/admin/activities': typeof AdminActivitiesRoute
   '/admin/contact': typeof AdminContactRoute
   '/admin/dashboard': typeof AdminDashboardRoute
+  '/admin/enquiries': typeof AdminEnquiriesRoute
   '/admin/facilities': typeof AdminFacilitiesRoute
   '/admin/features': typeof AdminFeaturesRoute
   '/admin/gallery': typeof AdminGalleryRoute
@@ -163,6 +171,7 @@ export interface FileRoutesById {
   '/admin/activities': typeof AdminActivitiesRoute
   '/admin/contact': typeof AdminContactRoute
   '/admin/dashboard': typeof AdminDashboardRoute
+  '/admin/enquiries': typeof AdminEnquiriesRoute
   '/admin/facilities': typeof AdminFacilitiesRoute
   '/admin/features': typeof AdminFeaturesRoute
   '/admin/gallery': typeof AdminGalleryRoute
@@ -184,6 +193,7 @@ export interface FileRouteTypes {
     | '/admin/activities'
     | '/admin/contact'
     | '/admin/dashboard'
+    | '/admin/enquiries'
     | '/admin/facilities'
     | '/admin/features'
     | '/admin/gallery'
@@ -203,6 +213,7 @@ export interface FileRouteTypes {
     | '/admin/activities'
     | '/admin/contact'
     | '/admin/dashboard'
+    | '/admin/enquiries'
     | '/admin/facilities'
     | '/admin/features'
     | '/admin/gallery'
@@ -222,6 +233,7 @@ export interface FileRouteTypes {
     | '/admin/activities'
     | '/admin/contact'
     | '/admin/dashboard'
+    | '/admin/enquiries'
     | '/admin/facilities'
     | '/admin/features'
     | '/admin/gallery'
@@ -242,6 +254,7 @@ export interface RootRouteChildren {
   AdminActivitiesRoute: typeof AdminActivitiesRoute
   AdminContactRoute: typeof AdminContactRoute
   AdminDashboardRoute: typeof AdminDashboardRoute
+  AdminEnquiriesRoute: typeof AdminEnquiriesRoute
   AdminFacilitiesRoute: typeof AdminFacilitiesRoute
   AdminFeaturesRoute: typeof AdminFeaturesRoute
   AdminGalleryRoute: typeof AdminGalleryRoute
@@ -323,6 +336,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminDashboardRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/enquiries': {
+      id: '/admin/enquiries'
+      path: '/admin/enquiries'
+      fullPath: '/admin/enquiries'
+      preLoaderRoute: typeof AdminEnquiriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin/facilities': {
       id: '/admin/facilities'
       path: '/admin/facilities'
@@ -386,6 +406,7 @@ const rootRouteChildren: RootRouteChildren = {
   AdminActivitiesRoute: AdminActivitiesRoute,
   AdminContactRoute: AdminContactRoute,
   AdminDashboardRoute: AdminDashboardRoute,
+  AdminEnquiriesRoute: AdminEnquiriesRoute,
   AdminFacilitiesRoute: AdminFacilitiesRoute,
   AdminFeaturesRoute: AdminFeaturesRoute,
   AdminGalleryRoute: AdminGalleryRoute,
