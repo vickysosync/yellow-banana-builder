@@ -9,7 +9,7 @@ export interface CrudField {
   label: string;
   type?: "text" | "textarea" | "select";
   options?: string[];
-  hint?: string;
+  hint?: string | undefined;
   /** hide from the table, show only in the edit form */
   formOnly?: boolean;
 }
