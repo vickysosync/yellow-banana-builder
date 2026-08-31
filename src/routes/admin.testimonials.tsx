@@ -9,7 +9,7 @@ export const Route = createFileRoute("/admin/testimonials")({
   component: TestimonialsAdmin,
   head: adminHead(
     "Testimonials",
-    "Manage parent testimonials shown on The Yellow Banana Preschool website.",
+    "Manage parent testimonials shown on The Yellow Banana Preschool & Activity Club website.",
     "/admin/testimonials",
   ),
 });

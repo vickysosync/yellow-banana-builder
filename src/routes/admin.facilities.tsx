@@ -9,7 +9,7 @@ export const Route = createFileRoute("/admin/facilities")({
   component: FacilitiesAdmin,
   head: adminHead(
     "Facilities",
-    "Manage facility highlights for The Yellow Banana Preschool premises.",
+    "Manage facility highlights for The Yellow Banana Preschool & Activity Club premises.",
     "/admin/facilities",
   ),
 });

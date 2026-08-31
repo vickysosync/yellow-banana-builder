@@ -9,7 +9,7 @@ export const Route = createFileRoute("/admin/programs")({
   component: ProgramsAdmin,
   head: adminHead(
     "Programs",
-    "Add, edit and publish preschool programs for The Yellow Banana.",
+    "Add, edit and publish preschool programs for The Yellow Banana Preschool & Activity Club.",
     "/admin/programs",
   ),
 });
