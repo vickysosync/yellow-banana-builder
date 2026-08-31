@@ -9,7 +9,7 @@ import {
   WhyUsSection,
 } from "@/components/sections";
 
-const title = "About Us | The Yellow Banana Preschool, Chinchpokli";
+const title = "About Us | The Yellow Banana Preschool & Activity Club, Chinchpokli";
 const description =
   "Our story, Montessori-inspired approach, 1:10 care model and child-safe facilities at The Yellow Banana Preschool And Activity Club in Chinchpokli, Mumbai.";
 

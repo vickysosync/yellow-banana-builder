@@ -9,7 +9,7 @@ export const Route = createFileRoute("/admin/gallery")({
   component: GalleryAdmin,
   head: adminHead(
     "Gallery",
-    "Add, categorise and publish gallery photos for The Yellow Banana Preschool.",
+    "Add, categorise and publish gallery photos for The Yellow Banana Preschool & Activity Club.",
     "/admin/gallery",
   ),
 });

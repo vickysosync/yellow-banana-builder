@@ -26,7 +26,7 @@ function Dashboard() {
   const newEnquiries = data.enquiries.filter((e) => e.status === "New");
 
   return (
-    <AdminLayout title="Welcome back, Admin" description="Here's what's happening at The Yellow Banana.">
+    <AdminLayout title="Welcome back, Admin" description="Here's what's happening at The Yellow Banana Preschool & Activity Club.">
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
         {stats.map((s) => (
           <Link

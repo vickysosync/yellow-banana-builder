@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, PublicLayout } from "@/components/PublicLayout";
 import { ActivityClubSection, CtaSection, ParentCommunicationSection } from "@/components/sections";
 
-const title = "Activity Club — Dance, Gymnastics & Camps | The Yellow Banana";
+const title = "Activity Club — Dance, Gymnastics & Camps | The Yellow Banana Preschool & Activity Club";
 const description =
-  "Gymnastics, physical training, children's dance, summer camps and creative activities for kids at The Yellow Banana Activity Club, Chinchpokli, Mumbai.";
+  "Gymnastics, physical training, children's dance, summer camps and creative activities for kids at The Yellow Banana Preschool & Activity Club, Chinchpokli, Mumbai.";
 
 export const Route = createFileRoute("/activities")({
   component: ActivitiesPage,

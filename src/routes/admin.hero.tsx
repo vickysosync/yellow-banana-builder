@@ -11,7 +11,7 @@ export const Route = createFileRoute("/admin/hero")({
   component: HeroAdmin,
   head: adminHead(
     "Hero Section",
-    "Edit the homepage hero content for The Yellow Banana Preschool.",
+    "Edit the homepage hero content for The Yellow Banana Preschool & Activity Club.",
     "/admin/hero",
   ),
 });

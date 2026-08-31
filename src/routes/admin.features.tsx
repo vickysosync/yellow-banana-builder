@@ -9,7 +9,7 @@ export const Route = createFileRoute("/admin/features")({
   component: FeaturesAdmin,
   head: adminHead(
     "Why Choose Us",
-    "Manage the reasons parents choose The Yellow Banana Preschool.",
+    "Manage the reasons parents choose The Yellow Banana Preschool & Activity Club.",
     "/admin/features",
   ),
 });

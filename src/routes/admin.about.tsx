@@ -12,7 +12,7 @@ export const Route = createFileRoute("/admin/about")({
   component: AboutAdmin,
   head: adminHead(
     "About",
-    "Edit the about section, story and approach cards for The Yellow Banana Preschool.",
+    "Edit the about section, story and approach cards for The Yellow Banana Preschool & Activity Club.",
     "/admin/about",
   ),
 });
