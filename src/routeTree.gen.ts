@@ -10,33 +10,245 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as ActivitiesRouteImport } from './routes/activities'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as ProgramsRouteImport } from './routes/programs'
+import { Route as AdminAboutRouteImport } from './routes/admin.about'
+import { Route as AdminActivitiesRouteImport } from './routes/admin.activities'
+import { Route as AdminContactRouteImport } from './routes/admin.contact'
+import { Route as AdminDashboardRouteImport } from './routes/admin.dashboard'
+import { Route as AdminFacilitiesRouteImport } from './routes/admin.facilities'
+import { Route as AdminFeaturesRouteImport } from './routes/admin.features'
+import { Route as AdminGalleryRouteImport } from './routes/admin.gallery'
+import { Route as AdminHeroRouteImport } from './routes/admin.hero'
+import { Route as AdminLoginRouteImport } from './routes/admin.login'
+import { Route as AdminProgramsRouteImport } from './routes/admin.programs'
+import { Route as AdminTestimonialsRouteImport } from './routes/admin.testimonials'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ActivitiesRoute = ActivitiesRouteImport.update({
+  id: '/activities',
+  path: '/activities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProgramsRoute = ProgramsRouteImport.update({
+  id: '/programs',
+  path: '/programs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminAboutRoute = AdminAboutRouteImport.update({
+  id: '/admin/about',
+  path: '/admin/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminActivitiesRoute = AdminActivitiesRouteImport.update({
+  id: '/admin/activities',
+  path: '/admin/activities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminContactRoute = AdminContactRouteImport.update({
+  id: '/admin/contact',
+  path: '/admin/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminDashboardRoute = AdminDashboardRouteImport.update({
+  id: '/admin/dashboard',
+  path: '/admin/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminFacilitiesRoute = AdminFacilitiesRouteImport.update({
+  id: '/admin/facilities',
+  path: '/admin/facilities',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminFeaturesRoute = AdminFeaturesRouteImport.update({
+  id: '/admin/features',
+  path: '/admin/features',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminGalleryRoute = AdminGalleryRouteImport.update({
+  id: '/admin/gallery',
+  path: '/admin/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminHeroRoute = AdminHeroRouteImport.update({
+  id: '/admin/hero',
+  path: '/admin/hero',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminLoginRoute = AdminLoginRouteImport.update({
+  id: '/admin/login',
+  path: '/admin/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminProgramsRoute = AdminProgramsRouteImport.update({
+  id: '/admin/programs',
+  path: '/admin/programs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminTestimonialsRoute = AdminTestimonialsRouteImport.update({
+  id: '/admin/testimonials',
+  path: '/admin/testimonials',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/activities': typeof ActivitiesRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/programs': typeof ProgramsRoute
+  '/admin/about': typeof AdminAboutRoute
+  '/admin/activities': typeof AdminActivitiesRoute
+  '/admin/contact': typeof AdminContactRoute
+  '/admin/dashboard': typeof AdminDashboardRoute
+  '/admin/facilities': typeof AdminFacilitiesRoute
+  '/admin/features': typeof AdminFeaturesRoute
+  '/admin/gallery': typeof AdminGalleryRoute
+  '/admin/hero': typeof AdminHeroRoute
+  '/admin/login': typeof AdminLoginRoute
+  '/admin/programs': typeof AdminProgramsRoute
+  '/admin/testimonials': typeof AdminTestimonialsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/activities': typeof ActivitiesRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/programs': typeof ProgramsRoute
+  '/admin/about': typeof AdminAboutRoute
+  '/admin/activities': typeof AdminActivitiesRoute
+  '/admin/contact': typeof AdminContactRoute
+  '/admin/dashboard': typeof AdminDashboardRoute
+  '/admin/facilities': typeof AdminFacilitiesRoute
+  '/admin/features': typeof AdminFeaturesRoute
+  '/admin/gallery': typeof AdminGalleryRoute
+  '/admin/hero': typeof AdminHeroRoute
+  '/admin/login': typeof AdminLoginRoute
+  '/admin/programs': typeof AdminProgramsRoute
+  '/admin/testimonials': typeof AdminTestimonialsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/activities': typeof ActivitiesRoute
+  '/contact': typeof ContactRoute
+  '/gallery': typeof GalleryRoute
+  '/programs': typeof ProgramsRoute
+  '/admin/about': typeof AdminAboutRoute
+  '/admin/activities': typeof AdminActivitiesRoute
+  '/admin/contact': typeof AdminContactRoute
+  '/admin/dashboard': typeof AdminDashboardRoute
+  '/admin/facilities': typeof AdminFacilitiesRoute
+  '/admin/features': typeof AdminFeaturesRoute
+  '/admin/gallery': typeof AdminGalleryRoute
+  '/admin/hero': typeof AdminHeroRoute
+  '/admin/login': typeof AdminLoginRoute
+  '/admin/programs': typeof AdminProgramsRoute
+  '/admin/testimonials': typeof AdminTestimonialsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/activities'
+    | '/contact'
+    | '/gallery'
+    | '/programs'
+    | '/admin/about'
+    | '/admin/activities'
+    | '/admin/contact'
+    | '/admin/dashboard'
+    | '/admin/facilities'
+    | '/admin/features'
+    | '/admin/gallery'
+    | '/admin/hero'
+    | '/admin/login'
+    | '/admin/programs'
+    | '/admin/testimonials'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/activities'
+    | '/contact'
+    | '/gallery'
+    | '/programs'
+    | '/admin/about'
+    | '/admin/activities'
+    | '/admin/contact'
+    | '/admin/dashboard'
+    | '/admin/facilities'
+    | '/admin/features'
+    | '/admin/gallery'
+    | '/admin/hero'
+    | '/admin/login'
+    | '/admin/programs'
+    | '/admin/testimonials'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/activities'
+    | '/contact'
+    | '/gallery'
+    | '/programs'
+    | '/admin/about'
+    | '/admin/activities'
+    | '/admin/contact'
+    | '/admin/dashboard'
+    | '/admin/facilities'
+    | '/admin/features'
+    | '/admin/gallery'
+    | '/admin/hero'
+    | '/admin/login'
+    | '/admin/programs'
+    | '/admin/testimonials'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  ActivitiesRoute: typeof ActivitiesRoute
+  ContactRoute: typeof ContactRoute
+  GalleryRoute: typeof GalleryRoute
+  ProgramsRoute: typeof ProgramsRoute
+  AdminAboutRoute: typeof AdminAboutRoute
+  AdminActivitiesRoute: typeof AdminActivitiesRoute
+  AdminContactRoute: typeof AdminContactRoute
+  AdminDashboardRoute: typeof AdminDashboardRoute
+  AdminFacilitiesRoute: typeof AdminFacilitiesRoute
+  AdminFeaturesRoute: typeof AdminFeaturesRoute
+  AdminGalleryRoute: typeof AdminGalleryRoute
+  AdminHeroRoute: typeof AdminHeroRoute
+  AdminLoginRoute: typeof AdminLoginRoute
+  AdminProgramsRoute: typeof AdminProgramsRoute
+  AdminTestimonialsRoute: typeof AdminTestimonialsRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +260,139 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/activities': {
+      id: '/activities'
+      path: '/activities'
+      fullPath: '/activities'
+      preLoaderRoute: typeof ActivitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/programs': {
+      id: '/programs'
+      path: '/programs'
+      fullPath: '/programs'
+      preLoaderRoute: typeof ProgramsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/about': {
+      id: '/admin/about'
+      path: '/admin/about'
+      fullPath: '/admin/about'
+      preLoaderRoute: typeof AdminAboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/activities': {
+      id: '/admin/activities'
+      path: '/admin/activities'
+      fullPath: '/admin/activities'
+      preLoaderRoute: typeof AdminActivitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/contact': {
+      id: '/admin/contact'
+      path: '/admin/contact'
+      fullPath: '/admin/contact'
+      preLoaderRoute: typeof AdminContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/dashboard': {
+      id: '/admin/dashboard'
+      path: '/admin/dashboard'
+      fullPath: '/admin/dashboard'
+      preLoaderRoute: typeof AdminDashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/facilities': {
+      id: '/admin/facilities'
+      path: '/admin/facilities'
+      fullPath: '/admin/facilities'
+      preLoaderRoute: typeof AdminFacilitiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/features': {
+      id: '/admin/features'
+      path: '/admin/features'
+      fullPath: '/admin/features'
+      preLoaderRoute: typeof AdminFeaturesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/gallery': {
+      id: '/admin/gallery'
+      path: '/admin/gallery'
+      fullPath: '/admin/gallery'
+      preLoaderRoute: typeof AdminGalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/hero': {
+      id: '/admin/hero'
+      path: '/admin/hero'
+      fullPath: '/admin/hero'
+      preLoaderRoute: typeof AdminHeroRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/login': {
+      id: '/admin/login'
+      path: '/admin/login'
+      fullPath: '/admin/login'
+      preLoaderRoute: typeof AdminLoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/programs': {
+      id: '/admin/programs'
+      path: '/admin/programs'
+      fullPath: '/admin/programs'
+      preLoaderRoute: typeof AdminProgramsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/testimonials': {
+      id: '/admin/testimonials'
+      path: '/admin/testimonials'
+      fullPath: '/admin/testimonials'
+      preLoaderRoute: typeof AdminTestimonialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  ActivitiesRoute: ActivitiesRoute,
+  ContactRoute: ContactRoute,
+  GalleryRoute: GalleryRoute,
+  ProgramsRoute: ProgramsRoute,
+  AdminAboutRoute: AdminAboutRoute,
+  AdminActivitiesRoute: AdminActivitiesRoute,
+  AdminContactRoute: AdminContactRoute,
+  AdminDashboardRoute: AdminDashboardRoute,
+  AdminFacilitiesRoute: AdminFacilitiesRoute,
+  AdminFeaturesRoute: AdminFeaturesRoute,
+  AdminGalleryRoute: AdminGalleryRoute,
+  AdminHeroRoute: AdminHeroRoute,
+  AdminLoginRoute: AdminLoginRoute,
+  AdminProgramsRoute: AdminProgramsRoute,
+  AdminTestimonialsRoute: AdminTestimonialsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
