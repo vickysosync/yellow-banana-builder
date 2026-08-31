@@ -10,7 +10,7 @@ export function Field({
 }: {
   label: string;
   children: ReactNode;
-  hint?: string;
+  hint?: string | undefined;
 }) {
   return (
     <label className="block">
@@ -32,7 +32,7 @@ export function TextField({
   value: string;
   onChange: (v: string) => void;
   placeholder?: string;
-  hint?: string;
+  hint?: string | undefined;
 }) {
   return (
     <Field label={label} hint={hint}>

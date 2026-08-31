@@ -21,11 +21,11 @@ export function ContactForm() {
 
   function validate() {
     const e: Record<string, string> = {};
-    if (!form.parentName.trim()) e.parentName = "Please enter your name.";
-    if (!form.childName.trim()) e.childName = "Please enter your child's name.";
-    if (!form.childAge.trim()) e.childAge = "Please enter your child's age.";
-    if (!/^[0-9+\s-]{8,15}$/.test(form.phone.trim())) e.phone = "Enter a valid phone number.";
-    if (!form.program) e.program = "Please choose a program.";
+    if (!form.parentName.trim()) e["parentName"] = "Please enter your name.";
+    if (!form.childName.trim()) e["childName"] = "Please enter your child's name.";
+    if (!form.childAge.trim()) e["childAge"] = "Please enter your child's age.";
+    if (!/^[0-9+\s-]{8,15}$/.test(form.phone.trim())) e["phone"] = "Enter a valid phone number.";
+    if (!form.program) e["program"] = "Please choose a program.";
     setErrors(e);
     return Object.keys(e).length === 0;
   }
@@ -91,8 +91,8 @@ export function ContactForm() {
             value={form.parentName}
             onChange={(e) => setForm({ ...form, parentName: e.target.value })}
           />
-          {errors.parentName ? (
-            <p className="mt-1 text-xs text-destructive">{errors.parentName}</p>
+          {errors["parentName"] ? (
+            <p className="mt-1 text-xs text-destructive">{errors["parentName"]}</p>
           ) : null}
         </div>
         <div>
@@ -105,8 +105,8 @@ export function ContactForm() {
             value={form.childName}
             onChange={(e) => setForm({ ...form, childName: e.target.value })}
           />
-          {errors.childName ? (
-            <p className="mt-1 text-xs text-destructive">{errors.childName}</p>
+          {errors["childName"] ? (
+            <p className="mt-1 text-xs text-destructive">{errors["childName"]}</p>
           ) : null}
         </div>
         <div>
@@ -120,8 +120,8 @@ export function ContactForm() {
             value={form.childAge}
             onChange={(e) => setForm({ ...form, childAge: e.target.value })}
           />
-          {errors.childAge ? (
-            <p className="mt-1 text-xs text-destructive">{errors.childAge}</p>
+          {errors["childAge"] ? (
+            <p className="mt-1 text-xs text-destructive">{errors["childAge"]}</p>
           ) : null}
         </div>
         <div>
@@ -135,7 +135,7 @@ export function ContactForm() {
             value={form.phone}
             onChange={(e) => setForm({ ...form, phone: e.target.value })}
           />
-          {errors.phone ? <p className="mt-1 text-xs text-destructive">{errors.phone}</p> : null}
+          {errors["phone"] ? <p className="mt-1 text-xs text-destructive">{errors["phone"]}</p> : null}
         </div>
         <div className="sm:col-span-2">
           <label htmlFor="program" className="text-sm font-bold">
@@ -156,8 +156,8 @@ export function ContactForm() {
             <option value="Activity Club">Activity Club</option>
             <option value="Tuition Support">Tuition Support</option>
           </select>
-          {errors.program ? (
-            <p className="mt-1 text-xs text-destructive">{errors.program}</p>
+          {errors["program"] ? (
+            <p className="mt-1 text-xs text-destructive">{errors["program"]}</p>
           ) : null}
         </div>
         <div className="sm:col-span-2">

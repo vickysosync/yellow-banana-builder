@@ -55,7 +55,7 @@ export function ButtonLink({
   return (
     <Link
       to={to}
-      hash={hash}
+      {...(hash ? { hash } : {})}
       className={cn(base, variants[variant], sizes[size], className)}
     >
       {children}

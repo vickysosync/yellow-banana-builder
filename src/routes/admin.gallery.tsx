@@ -42,7 +42,7 @@ function GalleryAdmin() {
           blank: () => ({
             id: "",
             title: "",
-            category: GALLERY_CATEGORIES[0],
+            category: GALLERY_CATEGORIES[0]!,
             description: "",
             image: "",
             status: "active",
